@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" >
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div class="container py-2">
+        <!--Data or Content-->
+        <div class="box-1">
+            <div class="content-holder">
+                <p id="side-para" class="shadow-sm rounded p-2 fs-6 fw-light lh-sm">Don't have an account !! Sign-up now</p>
+                <button class="button-1 btn btn-outline-dark shadow rounded" id="slide-signup">Sign up</button>
+                <button class="button-2 btn btn-outline-dark shadow rounded" id="slide-signin">Login</button>
+            </div>
+        </div>
+
+        
+        <!--Forms-->
+        <div class="box-2">
+            <div class="login-form-container shadow">
+                <h1>Login Form</h1>
+                <form id="login-form">
+                <input required type="email" placeholder="Email" class="input-field" id="login-userMail">
+                <br><br>
+                <input required type="password" placeholder="Password" class="input-field" id="login-userPass">
+                <br><br>
+                <button class="login-button" id="loginBtn" type="button">Login</button>
+                </form>
+            </div>
+
+<!--Create Container for Signup form-->
+            <div class="signup-form-container shadow-lg">
+                <h1 class="my-2">Sign Up Form</h1>
+                <form id="signup-form">
+                <input required type="text" placeholder="Username" class="input-field" id="signup-userName">
+                <br><br>
+                <input required type="email" placeholder="Email" class="input-field" id="signup-userEmail">
+                <br><br>
+                <input required type="password" placeholder="Password" class="input-field" id="signup-userPass">
+                <br><br>
+                <button class="signup-button" id="registrationBtn" type="button">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <script type="module" src="app.js"></script>
+</body>
+</html>

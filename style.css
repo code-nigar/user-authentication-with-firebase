@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://wallpaperaccess.com/full/2324580.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: red;
+    background: linear-gradient(to left, hsl(212, 5%, 45%),  hsl(221, 9%, 27%));
+    width: 800px;
+    height: 400px;
+    margin: 10% auto;
+    border-radius: 5px;
+}
+
+.content-holder
+{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-top: 15%;
+    padding: 50px;
+}
+
+.content-holder h2
+{
+    font-size: 34px;
+    margin: 20px auto;
+}
+
+.content-holder p
+{
+    margin: 30px auto;
+}
+
+.content-holder button
+{
+    border:none;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: white;
+    width: 150px;
+    margin: 20px auto;
+}
+
+
+.box-2{
+    background-color: white;
+
+    margin: 5px;
+}
+
+.login-form-container
+{
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+.login-form-container h1
+{
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.input-field
+{
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid rgb(168, 168, 168);
+    width: 250px;
+    outline: none;
+    text-transform: lowercase;
+}
+
+.login-button{
+    box-sizing: border-box;
+    color: white;
+    font-size: 14px;
+    padding: 13px;
+    border-radius: 7px;
+    border: none;
+    width: 250px;
+    outline: none;
+    background-color: hsl(219, 14%, 48%);
+}
+.login-button:hover{
+    background-color: hsl(219, 84%, 38%);
+}
+
+
+.button-2
+{
+    display: none;
+}
+
+
+.signup-form-container
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    text-align: center;
+    display: none;
+}
+
+
+.signup-form-container h1
+{
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.signup-button{
+    box-sizing: border-box;
+    color: white;
+    font-size: 14px;
+    padding: 13px;
+    border-radius: 7px;
+    border: none;
+    width: 250px;
+    outline: none;
+    background-color: hsl(162, 14%, 48%);  
+}
+.signup-button:hover{
+    background-color: hsl(162, 94%, 38%);
+}
+
+@media (max-width:600px) {
+    .container{
+        display:flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 100vh;
+    }
+    .login-form-container, .signup-form-container{
+        padding: 0.75rem;
+        margin: 0.15rem;
+    }
+}
+@media (max-width:400px) {
+    .container{
+        display:flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100vh;
+    }
+    .login-form-container, .signup-form-container{
+        padding: 0.75rem;
+        margin: 0.15rem;
+        border-radius: 8px;
+    }
+}
